@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -42,33 +41,16 @@ body{background-color:var(--cinza-fundo);line-height:1.6}
     list-style: none;
     display: flex; 
     margin: 0;
-    padding: 10px 0; /* Diminui o padding vertical para um visual mais compacto */
-    justify-content: center; /* Centraliza os itens do menu no desktop */
-}
-    list-style: none;
-    display: flex; 
-    margin: 0;
     padding: 15px 0; /* Padding vertical centraliza */
     justify-content: center; /* Centraliza os itens do menu no desktop */
 }
 
 .novo-header .main-nav > ul > li {
     position: relative; 
-    margin: 0 10px; /* Diminui o espaçamento entre os itens principais */
-}
-    position: relative; 
     margin: 0 15px; 
 }
 
 .novo-header .main-nav a {
-    text-decoration: none;
-    color: var(--cor-menu-texto);
-    font-weight: 600;
-    padding: 10px 15px; /* Aumenta o padding horizontal para melhor espaçamento */
-    display: flex;
-    align-items: center;
-    transition: color 0.3s ease, background-color 0.3s ease; /* Adiciona transição para background-color */
-}
     text-decoration: none;
     color: var(--cor-menu-texto);
     font-weight: 600;
@@ -80,10 +62,6 @@ body{background-color:var(--cinza-fundo);line-height:1.6}
 
 .novo-header .main-nav a:hover {
     color: var(--cor-menu-hover);
-    background-color: #f0f0f0; /* Adiciona um leve fundo ao passar o mouse */
-    border-radius: 4px; /* Suaviza as bordas no hover */
-}
-    color: var(--cor-menu-hover);
 }
 
 .novo-header .main-nav .fa-chevron-down {
@@ -94,20 +72,6 @@ body{background-color:var(--cinza-fundo);line-height:1.6}
 
 /* Sub-menu styling */
 .novo-header .main-nav ul ul {
-    display: none; 
-    position: absolute;
-    top: 100%; 
-    left: 0;
-    background-color: var(--cor-submenu-fundo);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Sombra mais pronunciada e profissional */
-    min-width: 200px; /* Aumenta a largura mínima */
-    z-index: 900; 
-    border-radius: 8px; /* Bordas mais arredondadas */
-    padding: 10px 0;
-    opacity: 0; /* Adiciona opacidade para transição */
-    transform: translateY(10px); /* Adiciona um pequeno deslocamento para transição */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Transição suave */
-}
     display: none; 
     position: absolute;
     top: 100%; 
@@ -125,13 +89,6 @@ body{background-color:var(--cinza-fundo);line-height:1.6}
 }
 
 .novo-header .main-nav ul ul a {
-    padding: 10px 20px; /* Aumenta o padding interno do submenu */
-    color: var(--cor-menu-texto);
-    white-space: nowrap; 
-    font-weight: 400; 
-    justify-content: flex-start; 
-    transition: background-color 0.2s ease, color 0.2s ease; /* Transição mais rápida para itens do submenu */
-}
     padding: 8px 15px; 
     color: var(--cor-menu-texto);
     white-space: nowrap; 
@@ -140,19 +97,12 @@ body{background-color:var(--cinza-fundo);line-height:1.6}
 }
 
 .novo-header .main-nav ul ul a:hover {
-    background-color: var(--azul-principal); /* Fundo azul principal no hover */
-    color: var(--branco); /* Texto branco no hover */
-}
     background-color: #f5f5f5; 
     color: var(--cor-menu-hover);
 }
 
 /* Mostra o sub-menu ao passar o mouse */
 .novo-header .main-nav > ul > li:hover > ul {
-    display: block;
-    opacity: 1; /* Mostra o submenu com opacidade total */
-    transform: translateY(0); /* Volta para a posição original */
-}
     display: block;
 }
 
@@ -639,12 +589,6 @@ body{background-color:var(--cinza-fundo);line-height:1.6}
         align-items: flex-start;
     }
     .novo-header .main-nav ul {
-    list-style: none;
-    display: flex; 
-    margin: 0;
-    padding: 10px 0; /* Diminui o padding vertical para um visual mais compacto */
-    justify-content: center; /* Centraliza os itens do menu no desktop */
-}
         flex-direction: column; 
         padding: 60px 0 20px 0; 
         justify-content: flex-start;
@@ -652,22 +596,11 @@ body{background-color:var(--cinza-fundo);line-height:1.6}
         width: 100%;
     }
     .novo-header .main-nav > ul > li {
-    position: relative; 
-    margin: 0 10px; /* Diminui o espaçamento entre os itens principais */
-}
         margin: 0;
         width: 100%;
         border-bottom: 1px solid #eee;
     }
     .novo-header .main-nav a {
-    text-decoration: none;
-    color: var(--cor-menu-texto);
-    font-weight: 600;
-    padding: 10px 15px; /* Aumenta o padding horizontal para melhor espaçamento */
-    display: flex;
-    align-items: center;
-    transition: color 0.3s ease, background-color 0.3s ease; /* Adiciona transição para background-color */
-}
         padding: 15px 20px;
         justify-content: space-between; 
         width: 100%;
@@ -675,20 +608,6 @@ body{background-color:var(--cinza-fundo);line-height:1.6}
     
     /* Submenu no Mobile */
     .novo-header .main-nav ul ul {
-    display: none; 
-    position: absolute;
-    top: 100%; 
-    left: 0;
-    background-color: var(--cor-submenu-fundo);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Sombra mais pronunciada e profissional */
-    min-width: 200px; /* Aumenta a largura mínima */
-    z-index: 900; 
-    border-radius: 8px; /* Bordas mais arredondadas */
-    padding: 10px 0;
-    opacity: 0; /* Adiciona opacidade para transição */
-    transform: translateY(10px); /* Adiciona um pequeno deslocamento para transição */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Transição suave */
-}
         position: static; 
         display: none; 
         box-shadow: none;
@@ -699,23 +618,12 @@ body{background-color:var(--cinza-fundo);line-height:1.6}
         border-top: 1px solid #eee;
     }
     .novo-header .main-nav ul ul a {
-    padding: 10px 20px; /* Aumenta o padding interno do submenu */
-    color: var(--cor-menu-texto);
-    white-space: nowrap; 
-    font-weight: 400; 
-    justify-content: flex-start; 
-    transition: background-color 0.2s ease, color 0.2s ease; /* Transição mais rápida para itens do submenu */
-}
         padding: 10px 35px; 
         font-size: 0.95em;
     }
 
     /* Efeito hover vira toggle/click no mobile */
     .novo-header .main-nav > ul > li:hover > ul {
-    display: block;
-    opacity: 1; /* Mostra o submenu com opacidade total */
-    transform: translateY(0); /* Volta para a posição original */
-}
         display: none; 
     }
     /* A seta não precisa girar no mobile, pois a abertura será via JS (toggle) */
@@ -989,35 +897,6 @@ function startBannerSlider() {
 }
 
 function carregarProdutos(){
-    const gridProdutosEl = document.getElementById('grid-produtos');
-    if (!gridProdutosEl) return; // Adiciona verificação de segurança
-
-    gridProdutosEl.innerHTML = '';
-
-    catalogoPecas.forEach(produto => {
-        const card = document.createElement('div');
-        card.className = 'produto-card';
-        card.setAttribute('data-id', produto.id);
-        card.innerHTML = `
-            <img src="${produto.imagem_url}" alt="${produto.nome}">
-            <h4>${produto.nome}</h4>
-            <p>${produto.modelo}</p>
-            <span class="preco">R$ ${produto.preco.toFixed(2).replace('.', ',')}</span>
-            <button class="btn-adicionar" data-id="${produto.id}">
-                <i class="fas fa-shopping-cart"></i> Adicionar
-            </button>
-        `;
-        gridProdutosEl.appendChild(card);
-    });
-
-    // Adiciona listeners para os botões de adicionar ao carrinho
-    document.querySelectorAll('.btn-adicionar').forEach(button => {
-        button.addEventListener('click', adicionarAoCarrinho);
-    });
-    
-    // Adiciona listeners para o modal de detalhes do produto
-    adicionarListenersDetalheProduto();
-}
 listaProdutosEl.innerHTML=catalogoPecas.map(p=>`
 <div class="produto-card" data-id="${p.id}" data-nome="${p.nome.toLowerCase()}" data-modelo="${p.modelo.toLowerCase()}">
 <img src="${p.imagem_url}" alt="${p.nome}">
@@ -1046,70 +925,7 @@ function filterByBrand(brand) {
 }
 
 // Função de filtro unificada (para busca por texto e marca)
-function filterProducts(searchTerm){
-    const term = searchTerm.toLowerCase().trim();
-    const gridProdutosEl = document.getElementById('grid-produtos');
-    if (!gridProdutosEl) return; // Adiciona verificação de segurança
-
-    let produtosEncontrados = 0;
-    
-    // Garante que os listeners de clique nos botões e cards estejam ativos
-    document.querySelectorAll('.btn-adicionar').forEach(button => {
-        button.removeEventListener('click', adicionarAoCarrinho);
-    });
-    document.querySelectorAll('.produto-card').forEach(card => {
-        card.removeEventListener('click', handleCardClick);
-    });
-
-    gridProdutosEl.innerHTML = ''; // Limpa o grid antes de renderizar os filtrados
-
-    catalogoPecas.forEach(produto => {
-        const nome = produto.nome.toLowerCase();
-        const modelo = produto.modelo.toLowerCase();
-        const descricao = produto.descricaoCompleta.toLowerCase();
-
-        if (nome.includes(term) || modelo.includes(term) || descricao.includes(term)) {
-            produtosEncontrados++;
-            const card = document.createElement('div');
-            card.className = 'produto-card';
-            card.setAttribute('data-id', produto.id);
-            card.innerHTML = `
-                <img src="${produto.imagem_url}" alt="${produto.nome}">
-                <h4>${produto.nome}</h4>
-                <p>${produto.modelo}</p>
-                <span class="preco">R$ ${produto.preco.toFixed(2).replace('.', ',')}</span>
-                <button class="btn-adicionar" data-id="${produto.id}">
-                    <i class="fas fa-shopping-cart"></i> Adicionar
-                </button>
-            `;
-            gridProdutosEl.appendChild(card);
-        }
-    });
-
-    // Re-adiciona listeners para os botões de adicionar ao carrinho e cards
-    document.querySelectorAll('.btn-adicionar').forEach(button => {
-        button.addEventListener('click', adicionarAoCarrinho);
-    });
-    adicionarListenersDetalheProduto(); // Re-adiciona listeners de clique no card
-
-    // Mensagem de "Nenhum produto encontrado"
-    const mensagemNenhumProduto = document.getElementById('mensagem-nenhum-produto');
-    if (produtosEncontrados === 0) {
-        if (!mensagemNenhumProduto) {
-            const p = document.createElement('p');
-            p.id = 'mensagem-nenhum-produto';
-            p.style.textAlign = 'center';
-            p.style.color = '#666';
-            p.style.gridColumn = '1 / -1';
-            p.textContent = 'Nenhum produto encontrado com o termo de busca.';
-            gridProdutosEl.appendChild(p);
-        }
-    } else {
-        if (mensagemNenhumProduto) {
-            mensagemNenhumProduto.remove();
-        }
-    }
-}Brand = null) {
+function filterProducts(filterTermOrBrand = null) {
     const filterValue = filterTermOrBrand ? filterTermOrBrand.toLowerCase().trim() : searchInputEl.value.toLowerCase().trim();
     const cards = document.querySelectorAll('.produto-card');
 
@@ -1133,43 +949,6 @@ function filterProducts(searchTerm){
 
 
 function renderizarCarrinho(){
-    const listaCarrinhoEl = document.getElementById('lista-carrinho');
-    const totalCarrinhoEl = document.getElementById('total-carrinho');
-    
-    if (!listaCarrinhoEl || !totalCarrinhoEl) return; // Adiciona verificação de segurança
-
-    listaCarrinhoEl.innerHTML = '';
-    let valorTotal = 0;
-
-    if (carrinho.length === 0) {
-        listaCarrinhoEl.innerHTML = '<p style="text-align: center; color: #666;">Seu carrinho está vazio.</p>';
-    } else {
-        carrinho.forEach(item => {
-            const subtotal = item.preco * item.quantidade;
-            valorTotal += subtotal;
-
-            const li = document.createElement('li');
-            li.innerHTML = `
-                <div class="item-info">
-                    <span class="item-nome">${item.nome} (${item.modelo})</span>
-                    <span class="item-preco">R$ ${item.preco.toFixed(2).replace('.', ',')}</span>
-                </div>
-                <div class="item-acoes">
-                    <span class="item-quantidade">Qtde: ${item.quantidade}</span>
-                    <button class="btn-remover" data-id="${item.id}"><i class="fas fa-minus-circle"></i></button>
-                </div>
-            `;
-            listaCarrinhoEl.appendChild(li);
-        });
-    }
-
-    totalCarrinhoEl.textContent = `R$ ${valorTotal.toFixed(2).replace('.', ',')}`;
-
-    // Adiciona novamente os listeners de remoção após renderizar
-    document.querySelectorAll('.btn-remover').forEach(btn => {
-        btn.addEventListener('click', removerDoCarrinho);
-    });
-}
 itensCarrinhoEl.innerHTML='';
 let total=0;
 if(carrinho.length===0){
@@ -1197,50 +976,6 @@ valorTotalEl.textContent=`R$ ${total.toFixed(2).replace('.',',')}`;
 contadorCarrinhoEl.textContent=carrinho.reduce((a,i)=>a+i.quantidade,0);
 }
 function adicionarAoCarrinho(e){
-    const button = e.target.closest('.btn-adicionar');
-    if (!button) return;
-
-    const id = parseInt(button.dataset.id);
-    const produto = catalogoPecas.find(p => p.id === id);
-
-    if (!produto) {
-        console.error('Produto não encontrado no catálogo:', id);
-        return;
-    }
-
-    // Usar as informações do produto do catálogo
-    const nome = produto.nome;
-    const preco = produto.preco;
-    const modelo = produto.modelo; // Adicionado modelo para consistência
-
-    button.classList.add('loading');
-    button.disabled = true;
-
-    setTimeout(() => {
-        const itemExistente = carrinho.find(i => i.id === id);
-
-        if (itemExistente) {
-            itemExistente.quantidade++;
-        } else {
-            carrinho.push({
-                id,
-                nome,
-                preco,
-                modelo,
-                quantidade: 1
-            });
-        }
-
-        renderizarCarrinho();
-        
-        button.classList.remove('loading');
-        button.disabled = false;
-
-        // Abre o modal do carrinho
-        modalCarrinhoEl.style.display = 'block';
-
-    }, 1000);
-}
     const button = e.target;
     const id=parseInt(button.dataset.id);
     const nome=button.dataset.nome;
@@ -1271,18 +1006,6 @@ function adicionarAoCarrinho(e){
     }, 1000);
 }
 function removerDoCarrinho(e){
-    const id = parseInt(e.target.closest('.btn-remover').dataset.id); // Busca o ID no botão mais próximo
-    const index = carrinho.findIndex(i => i.id === id);
-    
-    if (index !== -1) {
-        const item = carrinho[index];
-        item.quantidade--;
-        if (item.quantidade <= 0) {
-            carrinho.splice(index, 1);
-        }
-    }
-    renderizarCarrinho();
-}
 const id=parseInt(e.target.dataset.id);
 const index=carrinho.findIndex(i=>i.id===id);
 if(index!==-1){
@@ -1295,50 +1018,6 @@ carrinho.splice(index,1);
 renderizarCarrinho();
 }
 function finalizarPedidoWhatsApp(e){
-    e.preventDefault();
-    const clienteNome = document.getElementById('campo-nome').value.trim();
-    const clienteWhatsapp = document.getElementById('campo-whatsapp').value.replace(/[^0-9]/g, '');
-    
-    if (!clienteNome || clienteWhatsapp.length < 10) {
-        mensagemStatusEl.style.color = 'red';
-        mensagemStatusEl.textContent = 'Preencha seu nome e um número de WhatsApp válido (com DDD).';
-        return;
-    }
-
-    // Recalcula o valor total com base nos itens do carrinho
-    const valorTotal = carrinho.reduce((a, i) => a + (i.preco * i.quantidade), 0);
-
-    const itensMensagem = carrinho.map((i, idx) =>
-        `*${idx + 1}.* ${i.nome} (${i.modelo})\n    *Qtde:* ${i.quantidade} | *Subtotal:* R$ ${(i.preco * i.quantidade).toFixed(2).replace('.', ',')}`
-    ).join('\n');
-
-    const mensagemWhatsapp = encodeURIComponent(
-        `*NOVO PEDIDO DE BATERIAS MOURA (VIA SITE)*\n\n` +
-        `*Cliente:* ${clienteNome}\n` +
-        `*WhatsApp:* ${clienteWhatsapp}\n\n` +
-        `*ITENS DO PEDIDO:*\n${itensMensagem}\n\n` +
-        `*TOTAL GERAL ESTIMADO:* R$ ${valorTotal.toFixed(2).replace('.', ',')}\n\n` +
-        `*Atenção:* Por favor, confirme o estoque, o valor e calcule o frete para o cliente.`
-    );
-
-    const numeroAtendente = '5511960720059';
-    const linkWhatsApp = `https://api.whatsapp.com/send?phone=${numeroAtendente}&text=${mensagemWhatsapp}`;
-
-    mensagemStatusEl.style.color = 'green';
-    mensagemStatusEl.textContent = 'Pedido pronto! Abrindo o WhatsApp em instantes...';
-    btnFinalizarWhatsAppEl.disabled = true;
-
-    setTimeout(() => {
-        window.open(linkWhatsApp, '_blank');
-        carrinho = [];
-        renderizarCarrinho();
-        modalCarrinhoEl.style.display = 'none';
-        btnFinalizarWhatsAppEl.disabled = false;
-        document.getElementById('campo-nome').value = '';
-        document.getElementById('campo-whatsapp').value = '';
-        mensagemStatusEl.textContent = '';
-    }, 2000);
-}
 e.preventDefault();
 const clienteNome=document.getElementById('campo-nome').value.trim();
 const clienteWhatsapp=document.getElementById('campo-whatsapp').value.replace(/[^0-9]/g,'');
@@ -1383,38 +1062,6 @@ function fecharDetalhesProdutoModal() {
 }
 
 function abrirDetalhesProdutoModal(produtoId) {
-    // Busca o produto no catálogo usando o ID
-    const produto = catalogoPecas.find(p => p.id === produtoId);
-
-    if (produto) {
-        const modalContentBody = document.getElementById('detalhes-produto-body');
-        
-        // Cria o HTML de detalhes do produto
-        modalContentBody.innerHTML = `
-            <div style="text-align: center; margin-bottom: 20px;">
-                <img src="${produto.imagem_url}" alt="${produto.nome}" style="max-width: 100%; max-height: 250px; object-fit: contain; border-radius: 5px;">
-            </div>
-            <h4 style="color: var(--azul-principal); font-size: 1.5em; margin-bottom: 5px;">${produto.nome}</h4>
-            <p style="color: #666; margin-bottom: 15px;">Tipo: ${produto.modelo}</p>
-            <strong style="font-size: 1.6em; color: var(--vermelho-preco); display: block; margin-bottom: 20px;">R$ ${produto.preco.toFixed(2).replace('.', ',')}</strong>
-            
-            <h5 style="color: var(--azul-principal); margin-bottom: 10px;">Descrição Detalhada:</h5>
-            <p style="margin-bottom: 20px; line-height: 1.5; font-size: 0.95em;">${produto.descricaoCompleta}</p>
-            
-            <button class="btn-adicionar" data-id="${produto.id}">
-                <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
-            </button>
-        `;
-
-        // Adiciona o listener ao botão de adicionar ao carrinho dentro do modal
-        const btnAdicionarModal = modalContentBody.querySelector('.btn-adicionar');
-        if (btnAdicionarModal) {
-            btnAdicionarModal.addEventListener('click', adicionarAoCarrinho);
-        }
-
-        document.getElementById('detalhes-produto-modal').style.display = 'block';
-    }
-}
     // Busca o produto no catálogo usando o ID
     const produto = catalogoPecas.find(p => p.id === produtoId);
 
@@ -1481,27 +1128,6 @@ function handleCardClick(event) {
 
 // Inicialização de Listeners
 document.getElementById('abrir-carrinho').addEventListener('click',()=>{
-    modalCarrinhoEl.style.display='block';
-    formularioPedidoEl.style.display='none';
-    btnIniciarPedidoEl.style.display='block';
-});
-document.querySelector('.fechar-modal').addEventListener('click',()=>{
-    modalCarrinhoEl.style.display='none';
-});
-// Adiciona listener para fechar o modal de detalhes do produto
-document.querySelectorAll('#detalhes-produto-modal .fechar-modal').forEach(span => {
-    span.onclick = fecharDetalhesProdutoModal;
-});
-window.addEventListener('click',e=>{
-    if(e.target===modalCarrinhoEl){
-        modalCarrinhoEl.style.display='none';
-    }
-    // Adiciona verificação para fechar o modal de detalhes do produto
-    const detalhesModal = document.getElementById('detalhes-produto-modal');
-    if (e.target === detalhesModal) {
-        fecharDetalhesProdutoModal();
-    }
-});
 modalCarrinhoEl.style.display='block';
 formularioPedidoEl.style.display='none';
 btnIniciarPedidoEl.style.display='block';
@@ -1582,8 +1208,6 @@ startBannerSlider();
 
 // ADICIONADO: Inicializa os listeners para o clique no produto
 // Já está sendo chamado dentro de carregarProdutos() para garantir que os elementos existam.
-// Garante que o listener de clique no botão de adicionar do modal de detalhes seja adicionado
-// (Já foi movido para dentro de abrirDetalhesProdutoModal)
 </script>
 </body>
 </html>
