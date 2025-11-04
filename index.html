@@ -903,8 +903,8 @@ listaProdutosEl.innerHTML=catalogoPecas.map(p=>`
 <h4>${p.nome}</h4>
 <p>Tipo: ${p.modelo}</p>
 <p class="preco">R$ ${p.preco.toFixed(2).replace('.',',')}</p>
-<button class="btn-adicionar" data-id="${p.id}" data-nome="${p.nome}" data-preco="${p.preco}" data-modelo="${p.modelo}">
-Adicionar ao Carrinho
+<button class="btn-adicionar btn-mais-detalhes" onclick="abrirDetalhesProdutoModal(${p.id})">
+Mais Detalhes
 </button>
 </div>
 `).join('');
@@ -1080,7 +1080,7 @@ function abrirDetalhesProdutoModal(produtoId) {
             <h5 style="color: var(--azul-principal); margin-bottom: 10px;">Descrição Detalhada:</h5>
             <p style="margin-bottom: 20px; line-height: 1.5; font-size: 0.95em;">${produto.descricaoCompleta}</p>
             
-            <button class="btn-adicionar" data-id="${produto.id}" data-nome="${produto.nome}" data-preco="${produto.preco}" data-modelo="${produto.modelo}" style="margin-top: 10px;" onclick="adicionarAoCarrinho(event); fecharDetalhesProdutoModal();">
+            <button class="btn-adicionar" data-id="${produto.id}" data-nome="${produto.nome}" data-preco="${produto.preco}" data-modelo="${produto.modelo}" style="margin-top: 10px;">
                 <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
             </button>
         `;
@@ -1115,7 +1115,7 @@ function adicionarListenersDetalheProduto() {
 }
 
 function handleCardClick(event) {
-    // Verifica se o clique não foi no botão "Adicionar ao Carrinho"
+    // Verifica se o clique não foi no botão "Mais Detalhes"
     if (!event.target.classList.contains('btn-adicionar') && !event.target.closest('.btn-adicionar')) {
         const produtoId = parseInt(this.getAttribute('data-id'));
         if (!isNaN(produtoId)) {
